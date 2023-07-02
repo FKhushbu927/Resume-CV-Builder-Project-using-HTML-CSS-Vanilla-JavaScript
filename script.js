@@ -57,5 +57,23 @@ function newLanSkillField() {
   //insert new element
   addBtn = lanSkillParentNode.insertBefore(lanSkillNewNode, lanSkillRefNode);
 
+}
 
+function newDigSkillField(){
+  let digSkillParentNode = document.getElementById("digitalSkill");
+  let digSkillNewNode = document.createElement("textarea");
+
+
+  digSkillNewNode.classList.add("form-control");
+  digSkillNewNode.classList.add("digSkillField");
+  digSkillNewNode.classList.add("mt-2");
+  digSkillNewNode.classList.add("mb-2")
+  digSkillNewNode.setAttribute("rows", 3);
+  digSkillNewNode.setAttribute("placeholder", "Enter here");
+
+  let digSkillRefNode = document.getElementById("digSkillTextArea"); //refernce node
+  let addBtn = document.getElementById("digSkillBtn");
+
+  //insert new element
+  addBtn = digSkillParentNode.insertBefore(digSkillNewNode, digSkillRefNode);
 }
