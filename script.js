@@ -38,3 +38,24 @@ function newAcaQuaField() {
   addBtn = acQuaParentNode.insertBefore(acQuaNewNode, acQuaRefNode);
 
 }
+
+function newLanSkillField() {
+  let lanSkillParentNode = document.getElementById("lanSkill");
+  let lanSkillNewNode = document.createElement("textarea");
+
+
+  lanSkillNewNode.classList.add("form-control");
+  lanSkillNewNode.classList.add("lanSkillField");
+  lanSkillNewNode.classList.add("mt-2");
+  lanSkillNewNode.classList.add("mb-2")
+  lanSkillNewNode.setAttribute("rows", 3);
+  lanSkillNewNode.setAttribute("placeholder", "Enter here");
+
+  let lanSkillRefNode = document.getElementById("lanSkillTextArea"); //refernce node
+  let addBtn = document.getElementById("lanSkillBtn");
+
+  //insert new element
+  addBtn = lanSkillParentNode.insertBefore(lanSkillNewNode, lanSkillRefNode);
+
+
+}
