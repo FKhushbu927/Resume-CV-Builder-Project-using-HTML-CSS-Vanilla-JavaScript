@@ -68,57 +68,65 @@
                         rows="3"></textarea>
                 </div>
 
-                <div class="form-group mt-3">
-                    <label for="workExField" class="mb-2 text-info">Work Experience</label>
-                    <textarea id="workExField" type="text" class="form-control workExField" placeholder="Enter here"
-                        rows="2"></textarea>
-                </div>
-                
-                <div class="container text-center mt-3" id="wExBtn">
-                    <button class="btn btn-primary btn-sm">Add</button>
+                <div class="rounded border border-primary my-3 py-2 px-2">
+                    <div class="form-group mt-3" id="woEx">
+                        <label for="" class="mb-2 text-info">Work Experience</label>
+                        <textarea type="text" class="form-control weField" id="wExTextArea" placeholder="Enter here"
+                            rows="2"></textarea>
+                    </div>
+                    <!--new texarea-->
+
+                    <div class="container text-center mt-3" id="workExBtn">
+                        <button onclick="newWorkExField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
                 </div>
 
-                <div class="form-group mt-3">
-                    <label for="acaQuaField" class="mb-2 text-info">Academic Qualification</label>
-                    <textarea id="acaQuaField" type="text" class="form-control acaQuaField" placeholder="Enter here"
-                        rows="2"></textarea>
-                </div>
-                
-                <div class="container text-center mt-3" id="acaQuaBtn">
-                    <button class="btn btn-primary btn-sm">Add</button>
+
+                <div class="rounded border border-primary my-3 py-2 px-2">
+                    <div class="form-group mt-3" id="acaQua">
+                        <label for="" class="mb-2 text-info">Academic Qualification</label>
+                        <textarea type="text" class="form-control acaQuaField" id="acQuaTextArea"
+                            placeholder="Enter here" rows="2"></textarea>
+                    </div>
+
+                    <!-- onclick="newAcaQuaField()" -->
+                    <div class="container text-center mt-3" id="acaQuaBtn">
+                        <button onclick="newAcaQuaField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
                 </div>
 
-                   <!---language skills-->
+                <!---language skills-->
                 <div class="form-group mt-3">
                     <label for="lanSkillField" class="mb-2 text-info">Language Skills</label>
                     <textarea id="lanSkillField" type="text" class="form-control acaQuaField" placeholder="Enter here"
                         rows="2"></textarea>
                 </div>
-                
+                <!-- onclick="newLanSkillField()" -->
                 <div class="container text-center mt-3" id="lanSkillBtn">
                     <button class="btn btn-primary btn-sm">Add</button>
                 </div>
 
-                   <!-- Digital Siklls -->
+                <!-- Digital Siklls -->
 
-                   <div class="form-group mt-3">
+                <div class="form-group mt-3">
                     <label for="digitalSkillField" class="mb-2 text-info">Digital Skills</label>
-                    <textarea id="digitalSkillField" type="text" class="form-control acaQuaField" placeholder="Enter here"
-                        rows="2"></textarea>
+                    <textarea id="digitalSkillField" type="text" class="form-control acaQuaField"
+                        placeholder="Enter here" rows="2"></textarea>
                 </div>
-                
+
+                <!-- onclick="newDigitalSkillField()" -->
                 <div class="container text-center mt-3" id="digitalSkillBtn">
                     <button class="btn btn-primary btn-sm">Add</button>
                 </div>
 
             </div><!--professional information-->
             <div class="container  text-center mt-3 mb-5">
-                 <button class="btn btn-primary btn-lg">Generate Resume</button>
+                <button class="btn btn-primary btn-lg">Generate Resume</button>
             </div>
 
         </div><!--row-->
     </div>
-    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
     <script src="script.js"></script>
 </body>
 
