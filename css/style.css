@@ -1,5 +1,5 @@
 #cv-form{
-    display: none;
+    /* display: none; */
 }
 .myImg{
     border: 1px solid red;
@@ -18,4 +18,7 @@
 }
 #cv-template{
     /* display: none; */
+}
+.background2{
+    background: red;
 }

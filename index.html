@@ -61,13 +61,10 @@
 
                 <p class="secondary-text my-3 text-info">Hobbies</p>
                 <div class="form-group">
-                    <!-- <label for="linkedInField" class="mb-2 text-info">LinkedIn</label> -->
-                    <input id="" type="text" class="form-control" placeholder="Enter Your hobbies ">
-                    <input id="" type="text" class="form-control" placeholder="Enter Your hobbies ">
-                    <input id="" type="text" class="form-control" placeholder="Enter Your hobbies ">
-                    <input id="" type="text" class="form-control" placeholder="Enter Your hobbies ">
-                    <input id="" type="text" class="form-control" placeholder="Enter Your hobbies ">
+                    <label for="" class="mb-2 text-info">LinkedIn</label>
+                    <input id="" type="text" class="form-control" placeholder="Enter Your ">
                 </div>
+             
 
                 <p class="secondary-text my-3 text-info">Awards</p>
                 <div class="form-group">
@@ -90,12 +87,12 @@
                         rows="3"></textarea>
                 </div>
 
-                <div class="rounded border border-primary my-3 py-2 px-2">
-                    <div class="form-group mt-3" id="woEx">
+                <div class="rounded border border-primary my-3 py-2 px-2" id ="woEx">
+                    <!-- <div class="form-group mt-3" id="woEx"> -->
                         <label for="" class="mb-2 text-info">Work Experience</label>
                         <textarea type="text" class="form-control weField" id="wExTextArea" placeholder="Enter here"
                             rows="2"></textarea>
-                    </div>
+                    <!-- </div> -->
                     <!--new texarea-->
 
                     <div class="container text-center mt-3" id="workExBtn">
@@ -145,27 +142,27 @@
 
             </div><!--professional information-->
             <div class="container  text-center mt-3 mb-5">
-                <button class="btn btn-primary btn-lg">Generate Resume</button>
+                <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate Resume</button>
             </div>
 
         </div><!--row-->
     </div><!--container-->
     <div class="container" id="cv-template">
-        <div class="row">
+        <div class="row background2">
             <div class="col-md-4 text-center py-5 my-2 background">
                 <img src="images/img.png" alt="" class="img-fluid myImg">
                 <div class="container">
-                  <p>Toaml Shen</p>
-                  <p>Contact</p>
-                  <p>Address:</p>
+                  <p id="nameTemp1">Toaml Shen</p>
+                  <p id="contactTemp">Contact</p>
+                  <p id="addressTemp">Address:</p>
                    <hr />
                    <h2>Important Links</h2>
-                   <p><a href="#">https://www.facebook.com/fkhushbu754/</a></p>
-                   <p><a href="#">https://www.instagram.com/elonmusk/?hl=en</a></p>
-                   <p><a href="#">https://github.com/FKhushbu927</a></p>
-                   <p><a href="#">https://www.linkedin.com/in/fatema-jannat-56231a192/</a></p>
+                   <p><a id="fbTemp" href="#">https://www.facebook.com/fkhushbu754/</a></p>
+                   <p><a id="instaTemp" href="#">https://www.instagram.com/elonmusk/?hl=en</a></p>
+                   <p><a id="gitTemp" href="#">https://github.com/FKhushbu927</a></p>
+                   <p><a id="linkedTemp" href="#">https://www.linkedin.com/in/fatema-jannat-56231a192/</a></p>
                    <h2>Your Hobbies</h2>
-                   <ul>
+                   <ul id="hobbyTemp">
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Lorem ipsum dolor sit amet.</li>
@@ -174,7 +171,7 @@
                    </ul>
 
                    <h2>Achievement and Awards</h2>
-                   <ul>
+                   <ul id="awardTemp">
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Lorem ipsum dolor sit amet.</li>
@@ -184,14 +181,14 @@
                 </div>
           </div><!--first column-->
           <div class="col-md-8 py-5 my-2 background-second">
-                         <h1 class="text-center person-name">Tomal Shen</h1>
+                         <h1 id="nameTemp2" class="text-center person-name">Tomal Shen</h1>
                          <!-- objective-header -->
                          <div class="card mt-4">
-                            <div class="card-header">
+                            <div class="card-header background">
                                 <h2>Objective</h2>
                             </div>
                             <div class="card-body">
-                                <p>Lorem ipsum dolor sit, 
+                                <p id="objectiveTemp">Lorem ipsum dolor sit, 
                                     amet consectetur adipisicing elit. Numquam nobis in 
                                     assumenda aspernatur deserunt dolor. Lorem, ipsum dolor 
                                     sit amet consectetur adipisicing elit. Cum minima modi
@@ -200,11 +197,11 @@
                          </div>
 
                          <div class="card mt-4">
-                            <div class="card-header">
+                            <div class="card-header background">
                                 <h2>Work Experience</h2>
                             </div>
                             <div class="card-body">
-                               <ul>
+                               <ul id="wExTemp">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis!</li>
                                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perspiciatis?</li>
                                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.</li>
@@ -216,11 +213,11 @@
 
                          
                          <div class="card mt-4">
-                            <div class="card-header">
+                            <div class="card-header background">
                                 <h2>Academic Qualification</h2>
                             </div>
                             <div class="card-body">
-                               <ul>
+                               <ul id="aqTemp">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis!</li>
                                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perspiciatis?</li>
                                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.</li>
@@ -231,11 +228,11 @@
                          </div><!--work-experience-->
                          <!--language skills-->
                          <div class="card mt-4">
-                            <div class="card-header">
+                            <div class="card-header background">
                                 <h2>Language Skills</h2>
                             </div>
                             <div class="card-body">
-                               <ul>
+                               <ul id="langTemp">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis!</li>
                                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perspiciatis?</li>
                                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.</li>
@@ -246,11 +243,11 @@
                          </div>  <!--language skills-->
 
                          <div class="card mt-4">
-                            <div class="card-header">
+                            <div class="card-header background">
                                 <h2>Digital Skills</h2>
                             </div>
                             <div class="card-body">
-                               <ul>
+                               <ul id="digTemp">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis!</li>
                                 <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, perspiciatis?</li>
                                 <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, laboriosam.</li>
@@ -260,13 +257,14 @@
                          </div>
                          </div>
 
-            
-
-
-
           </div><!--second column-->
+          <div class="text-center my-3 py-3">  
+            <button onclick="downloadCv()" class="btn btn-primary">Download CV</button>
         </div>
-    </div>
+        </div>
+             
+    </div><!--cv-template-->
+    
     <!-- <script src="js/bootstrap.js"></script> -->
     <script src="script.js"></script>
 </body>

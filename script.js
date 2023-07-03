@@ -77,3 +77,58 @@ function newDigSkillField(){
   //insert new element
   addBtn = digSkillParentNode.insertBefore(digSkillNewNode, digSkillRefNode);
 }
+function generateCV(){
+  console.log("generating");
+  let nameField = document.getElementById("nameField").value;
+  let nameT1 =  document.getElementById("nameTemp1");
+  nameT1.innerHTML = nameField;
+
+  document.getElementById("nameTemp2").innerHTML = nameField;
+
+
+  //contact
+  document.getElementById("contactTemp").innerHTML =  document.getElementById("contactField").value;
+  document.getElementById("addressTemp").innerHTML = document.getElementById("addressField").value;
+  document.getElementById("fbTemp").innerHTML = document.getElementById("fbField").value;
+  document.getElementById("instaTemp").innerHTML = document.getElementById("instaField").value;
+  document.getElementById("gitTemp").innerHTML = document.getElementById("gitHubField").value;
+  document.getElementById("linkedTemp").innerHTML = document.getElementById("linkedInField").value;
+
+  document.getElementById("objectiveTemp").innerHTML = document.getElementById("objectiveField").value;
+ 
+ let wExText = document.getElementsByClassName("weField");
+ let str = '';
+
+ for(let e of wExText){ 
+  str = str + `<li> ${e.value} </li>`; 
+ }
+ document.getElementById("wExTemp").innerHTML = str;
+  
+
+ let acQuaText = document.getElementsByClassName("acaQuaField");
+ let strAcQua = '';
+
+ for(let e of acQuaText){
+          strAcQua  = strAcQua  + `<li> ${e.value} </li>` ;
+ }
+
+ document.getElementById("aqTemp").innerHTML = strAcQua;
+
+ let langText = document.getElementsByClassName("lanSkillField");
+ let strLang = '';
+
+ for(let e of langText){
+       strLang = strLang +`<li> ${e.value} <li>` ;
+ }
+ document.getElementById("langTemp").innerHTML = strLang;
+
+ let digitalText = document.getElementsByClassName("digSkillField");
+ let strDig = '';
+
+ for(let e of digitalText){
+  strDig =  strDig +`<li> ${e.value} <li>` ;
+ }
+ document.getElementById("digTemp").innerHTML = strDig;
+
+
+}
