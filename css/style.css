@@ -1,3 +1,21 @@
-input #placeholder{
-    color: brown;
+#cv-form{
+    display: none;
+}
+.myImg{
+    border: 1px solid red;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.background{
+    background: hsl(0, 14%, 73%);
+}
+.background-second{
+    background: rgb(225, 246, 250);
+}
+.person-name{
+    font-weight: 600;
+}
+#cv-template{
+    /* display: none; */
 }
