@@ -130,6 +130,16 @@ function generateCV(){
  }
  document.getElementById("digTemp").innerHTML = strDig;
 
+ //code for setting images
+  let file = document.getElementById("imgField").files[0];
+  let reader = new FileReader();
+
+  reader.readAsDataURL(file);
+
+  reader.onloadend = function(){
+    document.getElementById("imgTemp").src = reader.result;
+  }
+
   document.getElementById("cv-form").style.display = 'none';
   document.getElementById("cv-template").style.display = 'block';
 }
